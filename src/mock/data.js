@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'William Tran | Developer', // e.g: 'Name | Developer'
+  title: 'William Tran | Software Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: 'Welcome to my website', // e.g: Welcome to my website
 };
@@ -10,8 +10,8 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: "Hello, I'm",
-  name: 'William Tran',
-  subtitle: "I'm a software developer.",
+  name: 'William\u00A0Tran',
+  subtitle: "I'm a software developer",
   cta: 'Learn more',
 };
 
