@@ -20,7 +20,7 @@ export const aboutData = {
   img: 'profilepic.jpg',
   paragraphOne: "I'm a software developer interested in making a positive impact!",
   paragraphTwo:
-    'I have experience in full-stack development from both personal projects and professional work, and I am also eager to take on new roles. Previously, I have worked as a Full-Stack Web Developer at UWaterloo CSCF and as a Mobile Developer at UWaterloo Engineering.',
+    'I have experience in full-stack development but I am also eager to take on new roles! Previously, I have worked as a Full-Stack Web Developer at UWaterloo CSCF and as a Mobile Developer at UWaterloo Engineering.',
   paragraphThree:
     'I study Software Engineering at the University of Waterloo where I am pursuing a specialization in Human-Computer Interaction. On campus, you might catch me attending sessions for UW/UX, dancing with UW Hip Hop, or weightlifting at PAC.',
   paragraphFour:
