@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `William Tran Website`,
-        short_name: `Simplefolio`,
+        short_name: `William Tran`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,

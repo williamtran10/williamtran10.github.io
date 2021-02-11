@@ -37,7 +37,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">Version 3.3</p>
+        <p className="footer__text">Version 3.4</p>
 
         {isEnabled && <GithubButtons />}
       </Container>
