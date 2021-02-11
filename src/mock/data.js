@@ -35,7 +35,7 @@ export const projectsData = [
     img: 'watcade.jpg',
     title: 'WatCade',
     info:
-      'In my first term of university, a couple of friends and I built a full size Raspberry Pi arcade machine from scratch. We bought all of the individual materials then put in work over the course of 3 months in the Engineering Student Machine Shop.',
+      'In my first term of university, a couple of friends and I built a full size Raspberry Pi arcade machine from scratch over the course of 3 months.',
     info2: 'You can read all about our process here:',
     url: 'https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df2894c6',
     repo: '', // if no repo, the button will not show up
