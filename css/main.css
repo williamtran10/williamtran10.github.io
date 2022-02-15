@@ -1,0 +1,95 @@
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+.removeBlockSpace {
+  font-size: 0;
+}
+.alignBottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/*-----------------------------------------------------*/
+
+.iconLink {
+  color: #cecece;
+  margin-right: 1.5em;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.iconLink:hover {
+  color: #696969;
+}
+.iconLink:active {
+  text-shadow: black 0px 0px 70px;
+}
+
+/*-----------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#mainContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 #headerName {
+  font-size: 4rem;
+  margin: -5px;
+}
+h1 #headerGreeting {
+  color: #a9a9a9;
+}
+
+#infoContainer {
+  margin-top: 10em;
+  position: relative;
+  text-align: right;
+}
+#infoContainer #introBlurb {
+  display: inline-block;
+  text-align: right;
+}
+#infoContainer #introBlurb p {
+  margin: 0.5em 0 0 0;
+  display: inline-block;
+}
+
+/*-----------------------------------------------------*/
+
+@media (max-width: 649px) {
+  #socialIcons {
+      position: relative;
+  }
+
+  html {
+      font-size: 14px;
+  }
+
+  #socialIcons .iconLink {
+      margin-right: 0;
+      margin-left: 1.5em;
+  }
+}
+
+@media (max-height: 359px) {
+  h1 {
+      position: fixed;
+      top: 0;
+  }
+}
