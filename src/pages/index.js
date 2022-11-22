@@ -20,6 +20,7 @@ import {
   FaGithub,
   FaRegFileAlt,
 } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Home() {
@@ -47,75 +48,37 @@ export default function Home() {
   ];
 
   return (
-    <ChakraProvider theme={theme}>
-      <Center h="calc(100vh)">
-        <VStack align="left">
-          <Text>👋 Hey there! I'm</Text>
-          <Heading>William Tran</Heading>
+    <>
+      <Helmet>
+        <html lang="en" />
+        <title>William Tran</title>
+        <meta name="description" content="William Tran Personal Website" />
+      </Helmet>
+      <ChakraProvider theme={theme}>
+        <Center h="calc(100vh)">
+          <VStack align="left">
+            <Text>👋 Hey there! I'm</Text>
+            <Heading>William Tran</Heading>
 
-          <Box py="24px">
-            <Highlight
-              query={["computer science", "University of Waterloo"]}
-              styles={{ px: "1.5", py: "0.5", rounded: "full", bg: "red.100" }}
-            >
-              I'm a computer science student at the University of Waterloo
-            </Highlight>
-          </Box>
+            <Box py="24px">
+              <Highlight
+                query={["computer science", "University of Waterloo"]}
+                styles={{
+                  px: "1.5",
+                  py: "0.5",
+                  rounded: "full",
+                  bg: "red.100",
+                }}
+              >
+                I'm a computer science student at the University of Waterloo
+              </Highlight>
+            </Box>
 
-          <Text>So far I've...</Text>
-          <UnorderedList pl="24px" lineHeight="1.6em">
-            <ListItem>
-              <Highlight
-                query={["4 internships"]}
-                styles={{
-                  px: "1",
-                  py: "0",
-                  rounded: "full",
-                  bg: "orange.100",
-                }}
-              >
-                completed 4 internships in software engineering and web
-                development
-              </Highlight>
-            </ListItem>
-            <ListItem>
-              <Highlight
-                query={["3 cryptocurrency features"]}
-                styles={{
-                  px: "1",
-                  py: "0",
-                  rounded: "full",
-                  bg: "orange.100",
-                }}
-              >
-                enabled 3 cryptocurrency features on our platform by adding
-                support for STX tokens
-              </Highlight>
-            </ListItem>
-            <ListItem>
-              <Highlight
-                query={["2 cross-team initiatives"]}
-                styles={{
-                  px: "1",
-                  py: "0",
-                  rounded: "full",
-                  bg: "orange.100",
-                }}
-              >
-                led 2 cross-team initiatives including planning, development,
-                and testing
-              </Highlight>
-            </ListItem>
-            <ListItem>
-              <Link
-                href="https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df2894c6"
-                title="Arcade Cabinet Article"
-                target="_blank"
-                rel="noopener noreferrer"
-                isExternal
-              >
+            <Text>So far I've...</Text>
+            <UnorderedList pl="24px" lineHeight="1.6em">
+              <ListItem>
                 <Highlight
-                  query={["1 full-size arcade cabinet"]}
+                  query={["4 internships"]}
                   styles={{
                     px: "1",
                     py: "0",
@@ -123,40 +86,90 @@ export default function Home() {
                     bg: "orange.100",
                   }}
                 >
-                  built 1 full-size arcade cabinet built on a Raspberry Pi
+                  completed 4 internships in software engineering and web
+                  development
                 </Highlight>
-                <ExternalLinkIcon pb="2px" pl="4px" />
-              </Link>
-            </ListItem>
-          </UnorderedList>
-
-          <HStack pt="30px" pb="56px" spacing="12px">
-            {links.map((link) => (
-              <a
-                href={link.href}
-                title={link.title}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Box
-                  _hover={{
-                    opacity: "50%",
+              </ListItem>
+              <ListItem>
+                <Highlight
+                  query={["3 cryptocurrency features"]}
+                  styles={{
+                    px: "1",
+                    py: "0",
+                    rounded: "full",
+                    bg: "orange.100",
                   }}
-                  as={link.icon}
-                  size="24px"
-                />
-              </a>
-            ))}
-          </HStack>
+                >
+                  enabled 3 cryptocurrency features on our platform by adding
+                  support for STX tokens
+                </Highlight>
+              </ListItem>
+              <ListItem>
+                <Highlight
+                  query={["2 cross-team initiatives"]}
+                  styles={{
+                    px: "1",
+                    py: "0",
+                    rounded: "full",
+                    bg: "orange.100",
+                  }}
+                >
+                  led 2 cross-team initiatives including planning, development,
+                  and testing
+                </Highlight>
+              </ListItem>
+              <ListItem>
+                <Link
+                  href="https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df2894c6"
+                  title="Arcade Cabinet Article"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  isExternal
+                >
+                  <Highlight
+                    query={["1 full-size arcade cabinet"]}
+                    styles={{
+                      px: "1",
+                      py: "0",
+                      rounded: "full",
+                      bg: "orange.100",
+                    }}
+                  >
+                    built 1 full-size arcade cabinet built on a Raspberry Pi
+                  </Highlight>
+                  <ExternalLinkIcon pb="2px" pl="4px" />
+                </Link>
+              </ListItem>
+            </UnorderedList>
 
-          <StaticImage
-            src="../images/web.jpg"
-            alt="A sunset on a hill"
-            placeholder="blurred"
-            width="100%"
-          />
-        </VStack>
-      </Center>
-    </ChakraProvider>
+            <HStack pt="30px" pb="56px" spacing="12px">
+              {links.map((link) => (
+                <a
+                  href={link.href}
+                  title={link.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Box
+                    _hover={{
+                      opacity: "50%",
+                    }}
+                    as={link.icon}
+                    size="24px"
+                  />
+                </a>
+              ))}
+            </HStack>
+
+            <StaticImage
+              src="../images/web.jpg"
+              alt="A sunset on a hill"
+              placeholder="blurred"
+              width="100%"
+            />
+          </VStack>
+        </Center>
+      </ChakraProvider>
+    </>
   );
 }
