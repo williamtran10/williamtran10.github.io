@@ -12,6 +12,7 @@ import {
   UnorderedList,
   VStack,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import theme from "../@chakra-ui/gatsby-plugin/theme";
 import {
   FaLinkedinIn,
@@ -62,30 +63,69 @@ export default function Home() {
           </Box>
 
           <Text>So far I've...</Text>
-          <UnorderedList pl="24px">
+          <UnorderedList pl="24px" lineHeight="1.6em">
             <ListItem>
-              completed 4 internships in software engineering and web
-              development
+              <Highlight
+                query={["4 internships"]}
+                styles={{
+                  px: "1",
+                  py: "0",
+                  rounded: "full",
+                  bg: "orange.100",
+                }}
+              >
+                completed 4 internships in software engineering and web
+                development
+              </Highlight>
             </ListItem>
             <ListItem>
-              enabled 3 cryptocurrency features on our platform by adding
-              support for STX tokens
+              <Highlight
+                query={["3 cryptocurrency features"]}
+                styles={{
+                  px: "1",
+                  py: "0",
+                  rounded: "full",
+                  bg: "orange.100",
+                }}
+              >
+                enabled 3 cryptocurrency features on our platform by adding
+                support for STX tokens
+              </Highlight>
             </ListItem>
             <ListItem>
-              led 2 cross-team initiatives including planning, development, and
-              testing
+              <Highlight
+                query={["2 cross-team initiatives"]}
+                styles={{
+                  px: "1",
+                  py: "0",
+                  rounded: "full",
+                  bg: "orange.100",
+                }}
+              >
+                led 2 cross-team initiatives including planning, development,
+                and testing
+              </Highlight>
             </ListItem>
             <ListItem>
-              built 1{" "}
               <Link
                 href="https://medium.com/swlh/how-to-build-a-raspberry-pi-arcade-machine-3de4df2894c6"
                 title="Arcade Cabinet Article"
                 target="_blank"
                 rel="noopener noreferrer"
-                color="teal.500"
                 isExternal
               >
-                full-size arcade cabinet built on a Raspberry Pi
+                <Highlight
+                  query={["1 full-size arcade cabinet"]}
+                  styles={{
+                    px: "1",
+                    py: "0",
+                    rounded: "full",
+                    bg: "orange.100",
+                  }}
+                >
+                  built 1 full-size arcade cabinet built on a Raspberry Pi
+                </Highlight>
+                <ExternalLinkIcon pb="2px" pl="4px" />
               </Link>
             </ListItem>
           </UnorderedList>
