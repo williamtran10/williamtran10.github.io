@@ -35,4 +35,11 @@ module.exports = {
       },
     },
   ],
+  siteMetadata: {
+    title: `William Tran`,
+    description: `William Tran Personal Website`,
+    twitterUsername: `@gatsbyjs`,
+    image: `/favicon.ico`,
+    siteUrl: `https://www.williamtran.net`,
+  },
 };
