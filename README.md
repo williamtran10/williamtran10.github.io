@@ -7,3 +7,4 @@ todo:
 - add seo https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/
 - fix mobile responsiveness
 - add styles
+- fix favicon
