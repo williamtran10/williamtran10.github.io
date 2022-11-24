@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="description" content="William Tran Personal Website" />
       </Helmet>
       <ChakraProvider theme={theme}>
-        <Center h="calc(100vh)">
+        <Center h="calc(100vh)" m="20px">
           <VStack align="left">
             <Text>👋 Hey there! I'm</Text>
             <Heading>William Tran</Heading>
